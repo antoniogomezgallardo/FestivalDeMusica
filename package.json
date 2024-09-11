@@ -1,0 +1,24 @@
+{
+  "name": "festivaldemusica",
+  "version": "1.0.0",
+  "description": "A project for learning SASS and NPM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoniogomezgallardo/FestivalDeMusica.git"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "Gulp"
+  ],
+  "author": "Antonio Gómez Gallardo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antoniogomezgallardo/FestivalDeMusica/issues"
+  },
+  "homepage": "https://github.com/antoniogomezgallardo/FestivalDeMusica#readme"
+}
