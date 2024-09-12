@@ -21,7 +21,7 @@
     "url": "https://github.com/antoniogomezgallardo/FestivalDeMusica/issues"
   },
   "homepage": "https://github.com/antoniogomezgallardo/FestivalDeMusica#readme",
-  "dependencies": {
+  "devDependencies": {
     "sass": "^1.78.0"
   }
 }
