@@ -4,7 +4,7 @@
   "description": "A project for learning SASS and NPM",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch src/scss:build/css" 
+    "sass": "sass --watch src/scss:build/css"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/antoniogomezgallardo/FestivalDeMusica#readme",
   "devDependencies": {
+    "gulp": "^5.0.0",
     "sass": "^1.78.0"
   }
 }
