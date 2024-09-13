@@ -1,9 +1,1 @@
-@use 'base/variables' as v;
-@use 'base/normalize';
-
-body {  
-    font-family: v.$fuentePrincipal;
-    font-optical-sizing: auto;
-    font-style: normal;
-    background-color: v.$morado;
-}
+@forward 'base'
