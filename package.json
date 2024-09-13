@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "A project for learning SASS and NPM",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "sass": "sass --watch src/scss:build/css"
+    "sass": "sass --watch src/scss:build/css",
+    "holaGulp": "gulp holaGulp"
   },
   "repository": {
     "type": "git",
