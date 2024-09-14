@@ -370,3 +370,28 @@ img {
 body > section {
   padding: 10rem 0;
 }
+
+.header {
+  background-color: #4CB8B3;
+}
+.header .contenido-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.header h1 {
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.navegacion {
+  display: flex;
+  gap: 2rem;
+}
+.navegacion a {
+  color: #FFFFFF;
+}
+.navegacion a:hover {
+  color: #fdda00;
+}
