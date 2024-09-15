@@ -437,7 +437,7 @@ body > section {
   display: block;
   width: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .video video {
     width: 100%;
   }
@@ -458,4 +458,24 @@ body > section {
   padding: 1rem 3rem;
   font-weight: 700;
   font-size: 2.4rem;
+}
+
+@media (min-width: 768px) {
+  .contenido-festival {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+.contenido-festival .informacion-festival {
+  margin-top: 3rem;
+}
+@media (min-width: 768px) {
+  .contenido-festival .informacion-festival {
+    margin-top: 0;
+  }
+}
+.contenido-festival .informacion-festival .fecha {
+  color: #4CB8B3;
+  font-weight: 700;
 }
