@@ -375,19 +375,43 @@ body > section {
   background-color: #4CB8B3;
 }
 .header .contenido-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .header .contenido-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+  }
 }
 .header h1 {
   color: #FFFFFF;
-  margin: 0;
+  margin: 2rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .header h1 {
+    text-align: left;
+  }
+}
+@media (min-width: 768px) {
+  .header h1 {
+    margin: 0;
+  }
 }
 
 .navegacion {
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+@media (min-width: 768px) {
+  .navegacion {
+    flex-direction: row;
+    gap: 2rem;
+  }
 }
 .navegacion a {
   color: #FFFFFF;
