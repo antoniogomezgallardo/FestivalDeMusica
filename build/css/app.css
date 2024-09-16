@@ -415,6 +415,7 @@ body > section {
 }
 .navegacion a {
   color: #FFFFFF;
+  white-space: nowrap;
 }
 .navegacion a:hover {
   color: #fdda00;
