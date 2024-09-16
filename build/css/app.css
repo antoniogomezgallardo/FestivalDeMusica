@@ -502,6 +502,7 @@ body > section {
 }
 
 .escenario {
+  margin: 2rem;
   padding-top: 2rem;
 }
 .escenario .nombre-escenario {
