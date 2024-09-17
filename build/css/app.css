@@ -537,3 +537,85 @@ body > section {
 .bg-verde li:nth-child(odd) {
   background-color: #62c1bc;
 }
+
+.contenedor-boletos {
+  background-color: #4CB8B3;
+}
+.contenedor-boletos h3 {
+  text-align: center;
+  color: #FFFFFF;
+}
+.contenedor-boletos .boletos {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .contenedor-boletos .boletos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+  }
+}
+
+.pase {
+  transition: transform 0.3s ease-in-out;
+}
+.pase:hover {
+  transform: scale(1.1);
+  transform-origin: center;
+}
+.pase-nombre {
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: 3.4rem;
+}
+.pase-header {
+  background-color: #F53756;
+  padding: 0.2rem;
+}
+.pase-header p {
+  color: #FFFFFF;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.pase-body {
+  background-color: #FFFFFF;
+}
+.pase-body ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+}
+.pase-body ul li {
+  padding: 2rem;
+  border-bottom: 1px solid #4CB8B3;
+}
+.pase-footer {
+  background-color: #FFFFFF;
+  padding: 2rem;
+}
+.pase-footer p {
+  background-color: #752F97;
+  border-radius: 2rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.pase-footer p:hover {
+  background-color: #391749;
+}
+
+.footer {
+  background-color: #F53756;
+  padding: 1rem 0;
+}
+.footer .contenido-footer {
+  text-align: center;
+}
+.footer .contenido-footer p {
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  margin: 0;
+}
