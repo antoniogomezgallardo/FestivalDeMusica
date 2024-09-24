@@ -12,9 +12,57 @@ function addGaleria() {
         imagen.src = `src/gallery/full/${i}.jpg`
         imagen.alt = 'Imagen de la galeria'
 
+        //Event handler
+        imagen.onclick = function () {
+            mostrarModal(i)
+        }
+
         divGaleria.appendChild(imagen)
     }
 
+}
+
+function mostrarModal(i) {
+
+    // Crear Modal
+    const divModal = document.createElement('DIV');
+    divModal.classList.add('modal')
+
+    // Añadir imagen a la modal
+    const imagen = document.createElement('IMG')
+    imagen.src = `src/gallery/full/${i}.jpg`
+    imagen.alt = 'Imagen de la galeria'
+
+    divModal.appendChild(imagen)
+
+    // Añadir Boton para cerrar modal
+
+    const button = document.createElement('button')
+    button.textContent = 'X'
+
+    divModal.appendChild(button)
+
+    // Agregarlo al HTML
+    const body = document.querySelector('body');
+    body.classList.add('overflow-hidden')
+    body.appendChild(divModal)
+
+    // Cerrar modal
+    divModal.onclick = function () {
+        cerrarModal();
+    }
+
+}
+
+function cerrarModal() {
+    const modal = document.querySelector('.modal')
+    modal.classList.add('fadeOut')
 
 
+    setTimeout(() => {
+        modal?.remove()
+        const body = document.querySelector('body');
+        body.classList.remove('overflow-hidden')
+    }, 500);
+    
 }

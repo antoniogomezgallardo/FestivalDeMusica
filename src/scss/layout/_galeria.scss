@@ -1,34 +1,83 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
-.galeria{
+.galeria {
 
     h3 {
         text-align: center;
     }
-    
-    .contenido-galeria{
 
-        @include m.phoneXS{
+    .contenido-galeria {
+
+        @include m.phoneXS {
             @include m.grid(1, 2rem);
         }
 
-        @include m.tablet{
+        @include m.tablet {
             @include m.grid(2, 2rem);
         }
 
-        @include m.desktop{
+        @include m.desktop {
             @include m.grid(3, 2rem);
         }
 
-        @include m.desktopXL{
+        @include m.desktopXL {
             @include m.grid(4, 2rem);
         }
 
-        img{
+        img {
             height: 20rem;
             object-fit: cover;
         }
 
+    }
+
+}
+
+
+.modal {
+
+    position: fixed;
+    background-color: rgba($color: v.$negro, $alpha: 0.5);
+    inset: 0;
+    display: grid;
+    place-items: center;
+    animation: fadeIn ease-in 0.5s;
+
+    img {
+        max-width: 100rem;
+    }
+
+    &.fadeOut{
+        animation: fadeOut ease-in 0.5s;
+    }
+
+    button{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background-color: v.$blanco;
+        color: v.$negro;
+        font-size: 700;
+        cursor: pointer;
+        border: none;
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
     }
 }
