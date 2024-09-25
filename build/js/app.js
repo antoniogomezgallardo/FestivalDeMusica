@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     barraNavegacionFija();
     insertarGaleria();
     resaltarNavLink();
+    scrollNav();
 })
 
 function insertarGaleria() {
@@ -103,6 +104,22 @@ function resaltarNavLink() {
             if(link.getAttribute('href') === '#'+ actual){
                 link.classList.add('active')
             }
+        })
+    })
+
+}
+
+function scrollNav(){
+    const navLinks = document.querySelectorAll('.navegacion a')
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', e =>{
+            e.preventDefault()
+
+            const sectionScroll = e.target.getAttribute('href')
+            const section = document.querySelector(sectionScroll)
+
+            section.scrollIntoView({behavior: 'smooth'})
         })
     })
 
