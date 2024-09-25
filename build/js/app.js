@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
-    addGaleria();
+    barraNavegacionFija();
+    insertarGaleria();
 })
 
-function addGaleria() {
+function insertarGaleria() {
 
     const divGaleria = document.querySelector('.contenido-galeria')
     const NUMERO_DE_FOTOS = 16;
@@ -64,5 +65,17 @@ function cerrarModal() {
         const body = document.querySelector('body');
         body.classList.remove('overflow-hidden')
     }, 500);
-    
+
+}
+
+function barraNavegacionFija() {
+    const header = document.querySelector('.header')
+    const sobreFestival = document.querySelector('.contenido-festival')
+
+    document.addEventListener('scroll', function () {
+        if (sobreFestival.getBoundingClientRect().bottom < 1)
+            header.classList.add('fixed')
+        else
+            header.classList.remove('fixed')
+    })
 }
