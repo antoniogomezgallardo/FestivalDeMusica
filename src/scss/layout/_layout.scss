@@ -14,9 +14,6 @@
         }
     }
 
-
-
-
     .contenido-header {
         padding: 1rem;
 
@@ -40,6 +37,10 @@
         @include m.tablet {
             margin: 0;
         }
+
+        a{
+            color: v.$blanco;
+        }
     }
 }
 
@@ -60,6 +61,11 @@
 
         &:hover {
             color: v.$amarillo;
+        }
+
+        &.active{
+            color: v.$amarillo;
+
         }
     }
 }
